@@ -12,3 +12,7 @@ dist
 
 # Backups
 Backups
+
+# Yarn
+.yarnclean
+yarn.lock
