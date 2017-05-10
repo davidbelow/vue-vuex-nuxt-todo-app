@@ -1,22 +1,22 @@
-import express from 'express';
-const app = express();
+var express = require('express');
+var app = express();
 
-// ES5 to ES6 by https://lebab.io/try-it
 app.set('port', (process.env.PORT || 5000));
 
-app.use(express.static(`${__dirname}/dist`));
+app.use(express.static(__dirname + '/dist'));
 
-app.listen(app.get('port'), () => {
+app.listen(app.get('port'), function() {
   console.log('Node app is running on port', app.get('port'));
 });
 
-// var express = require('express');
-// var app = express();
+// import express from 'express';
+// const app = express();
 //
+// // ES5 to ES6 by https://lebab.io/try-it
 // app.set('port', (process.env.PORT || 5000));
 //
-// app.use(express.static(__dirname + '/dist'));
+// app.use(express.static(`${__dirname}/dist`));
 //
-// app.listen(app.get('port'), function() {
+// app.listen(app.get('port'), () => {
 //   console.log('Node app is running on port', app.get('port'));
 // });
