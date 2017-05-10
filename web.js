@@ -10,7 +10,7 @@ app.listen(app.get('port'), function() {
 });
 
 // import express from 'express';
-// const app = express();
+// const app = express(); // it could be that `const app` makes the app fail on Heroku
 //
 // // ES5 to ES6 by https://lebab.io/try-it
 // app.set('port', (process.env.PORT || 5000));
